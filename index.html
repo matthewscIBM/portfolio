@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Matthews Portfolio!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/218699e589.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <div id="header"> 
+    <div class="container">
+    <nav>
+       <img src="images/image3.jpeg" class="logo">
+       <ul id="sidemenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li> 
+        <li><a href="#contact">Contact</a></li>
+        <i class="fas fa-times" onclick="closemenu()"></i>
+    </ul>
+    <i class="fas fa-bars" onclick="openmenu()"></i> 
+    </nav>
+    <div class="header-text">
+        <p>Software/Web developer</p>
+        <h1>Hello, my name is <span>Christian<br> Matthews</span>.</h1>
+    </div>
+  </div>
+ </div>   
+<!--about section-->
+ <div id="about">
+    <div class="container"> 
+        <div class="row"> 
+        <div class="about-col-1">
+             <img src="images/image0 (1).jpeg" alt=" " />
+        </div>
+        <div class="about-col-2">
+           <h1 class="sub-title"> About Me</h1> 
+           <p>I am from Washington, DC and pursued my education at the University of the District of Columbia, where I earned an Associate's Degree in Computer Science. My fascination with coding initially sprouted from my passion for playing video games, prompting me to inquire into the intrest of game and app development. My journey into the world of coding began in high school, where I took an AP Computer Science course, exposing me to the fundamental principles of computer programming. In the professional realm, I have cultivated the essential attributes for success, including a profound personal drive and unwavering energy. Possessing an innate ability to consistently achieve peak performance, I align my efforts with organizational goals. Exceptional communication skills further distinguish me, facilitating seamless collaboration within a team-oriented environment. Recognized as a supportive and cooperative team member, I excel in delivering outstanding customer service, providing adept IT support, and contributing to volunteer initiatives that make annual positive impacts on the community.</p>
+           
+           <div class="tab-titles">
+                <p class ="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                <p class ="tab-links"onclick="opentab('Experiences')">Experiences</p>
+                <p class="tab-links"onclick="opentab('Education')">Education/Certs</p>
+                <p class ="tab-links"onclick="opentab('Projects')">Projects</p>
+           </div> 
+           <div class="tab-contents active-tab" id="Skills"> 
+               <ul>
+                <li><span>Software development</span><br>Using knowledge of Computer Science to create, design, deploy, and support software</li>
+                <li><span>HTML/CSS</span><br>Designing Web/App interfaces using Visual Studio Code</li>
+                <li><span>Java</span><br>coding using Eclipse, Visual Studio Code, & AWS(Amazon Web Services)</li>
+                <li><span>Data Structures & Algorithms</span><br>Knowledge of processing, retrieving, & storing data using methods and problem solving skills</li>
+                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+               </ul>
+           </div>
+          
+           <div class="tab-contents" id="Experiences"> 
+            <ul>
+             <li><span>Summer 2022</span><br>IBM Accelerate Program Software Developer Intern</li>
+             <li><span>Summer 2020</span><br>Internship at the Internal Revenue Service (IRS) JavaScript team Intern</li>
+             <li><span>Summer 2019</span><br>Tech Now Inc. Application Developer for Point of Sale (POS) Intern</li>
+             <li><span>March 2019 - January 2023</span><br>Retail Associate for Washington Nationals Baseball Club</li>
+            </ul>
+        </div>
+        <div id="education">
+        <div class="tab-contents" id="Education"> 
+            <ul>
+             <li><span>Graduated December 2023</span><br>AAS Major: Computer Science at University of District of Columbia</li>
+             <li><span>Graduated June 2017</span><br>Friendship Colligate Academy</li>
+             <li><span>Coming Summer 2024</span><br>CompTIA A+ Certification</li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    <!--Job persuing & tab clicks-->
+<div id="jobsPersuing">
+    <div class="container">
+        <h1 class="sub-title">Jobs Persuing</h1>
+        <div class="jobsPersuing-list">
+            <div>
+                <h2>Web Developer</h2>
+                <p>Should you desire a uniquely crafted web page by me, do not hesitate to reach out to me through the contact section on this page! Your vision can come to life with a personalized and expertly designed website.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>Software Developer</h2>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>Game/App Developer</h2>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>UI/UX Designer</h2>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--projects-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+        </div>
+    </div>
+
+    <!--contact--> 
+    <div id="contact">
+        <div class="row"> 
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> matthewschristian24@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 202-288-7858</p>
+                <a href="ChristianMatthewsResumePDF.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name:" required>
+                    <input type="email" name="Email" placeholder="Email:" required>
+                    <textarea name="Message" rows="6" placeholder="Any Message:"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+
+            
+
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script> 
+    
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){ 
+            tablink.classList.remove("active-link");
+        } 
+        for(tabcontent of tabcontents){ 
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+
+        }
+        function openmenu(){
+            sidemenu.style.right = "-200";
+            
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwcmlZhQHa4_gT2r7metw8Yv8ClBSG7Lpy6lHCHeOM2o4feGvgeG-7fk39S6hRJCPDVzw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Submit!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
